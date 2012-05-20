@@ -37,3 +37,6 @@
 [submodule "bundle/taglist-plus"]
 	path = bundle/taglist-plus
 	url = git://github.com/vim-scripts/taglist-plus.git
+[submodule "bundle/jade"]
+	path = bundle/jade
+	url = git://github.com/digitaltoad/vim-jade.git
