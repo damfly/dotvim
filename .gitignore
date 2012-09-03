@@ -1,2 +1,4 @@
 doc/tags
 backup/*
+.netrwhist
+.rbenv-version

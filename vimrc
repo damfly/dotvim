@@ -91,7 +91,7 @@ map <Leader>n :NERDTreeToggle<CR>
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent nofoldenable " Fold on indent (hit zi)
 au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab " default indent
 "au BufWritePost *.coffee silent CoffeeMake!     " recompile file when written
-au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw! " recompiles silentely
+"au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw! " recompiles silentely
 
 
 " ----------------------------------------------------------------------------
