@@ -66,10 +66,11 @@ set foldmethod=marker      " code folding with markers
 "  Powerline
 " ----------------------------------------------------------------------------
 
-let g:Powerline_symbols = 'fancy'
+"let g:Powerline_symbols = 'fancy'
 "let g:Powerline_theme = 'skwp' " solarized
-let g:Powerline_colorscheme = 'skwp' " solarized
+"let g:Powerline_colorscheme = 'skwp' " solarized
 "call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo') " white spaces
+let g:airline_powerline_fonts=1
 
 " ----------------------------------------------------------------------------
 "  The NerdTree
