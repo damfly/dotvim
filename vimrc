@@ -5,6 +5,35 @@ set nocompatible
 filetype off
 set encoding=utf-8
 
+" Load Vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Bundles!
+Bundle 'kien/ctrlp'
+Bundle 'scrooloose/nerdtree'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-git'
+Bundle 'tpope/vim-surround'
+Bundle 'scrooloose/syntastic'
+Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'bling/vim-airline'
+Bundle 'mattn/webapi-vim'
+
+Bundle 'taglist-plus'
+Bundle 'rainbow_parentheses.vim'
+Bundle 'bad-whitespace'
+Bundle 'Gist.vim'
+
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-haml'
+Bundle 'pangloss/vim-javascript'
+Bundle 'tpope/vim-rails'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'nono/vim-handlebars'
+Bundle 'wavded/vim-stylus'
+Bundle 'plasticboy/vim-markdown'
 
 " Base 2
 filetype plugin indent on
@@ -93,6 +122,19 @@ au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab " default indent
 "au BufWritePost *.coffee silent CoffeeMake!     " recompile file when written
 "au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw! " recompiles silentely
 
+" Rainbow Parantheses by default
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+"au Syntax * RainbowParenthesesLoadSquare
+"au Syntax * RainbowParenthesesLoadBraces
+
+" Markdown
+let g:vim_markdown_folding_disabled=1
+
+" Gist
+let g:gist_clip_command = 'pbcopy'
+let g:gist_open_browser_after_post = 1
+let g:gist_post_private = 1
 
 " ----------------------------------------------------------------------------
 "  .swp files
