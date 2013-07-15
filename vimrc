@@ -1,14 +1,13 @@
 " Inspiration from janus' vimrc & holman/dotfiles
 
-" Infect with pathogen
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-call pathogen#infect()
-
 " Base
 set nocompatible
-filetype plugin indent on
+filetype off
 set encoding=utf-8
+
+
+" Base 2
+filetype plugin indent on
 
 " Ignores
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
