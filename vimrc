@@ -17,7 +17,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/syntastic'
-Bundle 'git://git.wincent.com/command-t.git'
+" Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'bling/vim-airline'
 Bundle 'mattn/webapi-vim'
 
@@ -106,9 +106,9 @@ let g:airline_powerline_fonts=1
 " ----------------------------------------------------------------------------
 
 " Open the tree if no files specified
-autocmd vimenter * if !argc() | NERDTree | endif
+"autocmd vimenter * if !argc() | NERDTree | endif
 " Close vim if the tree is last buffer
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif 
+"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif 
 " Ignores
 let NERDTreeIgnore=['\.pyc$', '\.rbc$', '\~$', '\node_modules/', 'tmp/']
 " Map <Leader>n to toggle the tree
