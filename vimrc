@@ -37,6 +37,7 @@ Bundle 'plasticboy/vim-markdown'
 
 " Base 2
 filetype plugin indent on
+set mouse=a
 
 " Ignores
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
