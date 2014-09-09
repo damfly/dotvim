@@ -7,4 +7,5 @@ set go-=L
 set go-=T
 
 " Fonts
-set guifont=Liberation\ Mono\ for\ Powerline:h13
+"set guifont=Liberation\ Mono\ for\ Powerline:h13
+set guifont=M+\ 1m\ for\ Powerline:h15
