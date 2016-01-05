@@ -9,73 +9,40 @@ set encoding=utf-8
 "  Vundle
 " ---------------------------------------------------------------------------
 set rtp+=~/.vim/bundle/vundle/
-call vundle#begin()
-
-" Plugins!
-"   Reload in vim: :source %
-"   :PluginInstall
-Plugin 'Shougo/vimproc.vim'
-Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Shougo/unite.vim'
-
-" Plugins - Colorschemes
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'sjl/badwolf'
-Plugin 'morhetz/gruvbox'
-Plugin 'w0ng/vim-hybrid'
-Plugin 'ciaranm/inkpot'
-Plugin 'tomasr/molokai'
-Plugin 'sickill/vim-monokai'
-
-" Plugins - Langs
-Plugin 'pangloss/vim-javascript'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'tpope/vim-haml'
-Plugin 'tpope/vim-rails'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'nono/vim-handlebars'
-Plugin 'wavded/vim-stylus'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'rodjek/vim-puppet'
-
-" Plugins - Integrations
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-git'
-Plugin 'tpope/vim-surround'
-" Plugin 'scrooloose/syntastic'
-" Plugin 'git://git.wincent.com/command-t.git'
-Plugin 'bling/vim-airline'
-Plugin 'mattn/webapi-vim'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'rizzatti/funcoo.vim'
-Plugin 'rizzatti/dash.vim'
-
-" Interface
-" Plugin 'taglist-plus'
-Plugin 'rainbow_parentheses.vim'
-Plugin 'bad-whitespace'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'Gist.vim'
-Plugin 'godlygeek/tabular'
-
-
-" Snipmate
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
-"Plugin 'carlosgaldino/elixir-snippets'
-
-" Vundle: end
-call vundle#end()
-
 
 " ---------------------------------------------------------------------------
 "  Base
 " ---------------------------------------------------------------------------
+call vundle#rc()
+
+" Bundles!
+Bundle 'kien/ctrlp.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-git'
+"Bundle 'tpope/vim-surround'
+"Bundle 'scrooloose/syntastic'
+Bundle 'git://git.wincent.com/command-t.git'
+Bundle 'bling/vim-airline'
+Bundle 'mattn/webapi-vim'
+
+Bundle 'taglist-plus'
+Bundle 'rainbow_parentheses.vim'
+Bundle 'bad-whitespace'
+Bundle 'Gist.vim'
+
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-haml'
+Bundle 'pangloss/vim-javascript'
+Bundle 'tpope/vim-rails'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'nono/vim-handlebars'
+Bundle 'wavded/vim-stylus'
+Bundle 'plasticboy/vim-markdown'
+Bundle 'elixir-lang/vim-elixir'
+
+" Base 2
 filetype plugin indent on
 set mouse=a
 
@@ -187,10 +154,13 @@ au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab " default indent
 "au BufWritePost *.coffee silent CoffeeMake!     " recompile file when written
 "au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw! " recompiles silentely
 
+
 " ----------------------------------------------------------------------------
 "  Rainbow Parantheses
 " ----------------------------------------------------------------------------
-au VimEnter * RainbowParenthesesToggle
+
+" Rainbow Parantheses by default
+au Syntax * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
