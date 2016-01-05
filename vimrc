@@ -16,7 +16,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-surround'
-Bundle 'scrooloose/syntastic'
+"Bundle 'scrooloose/syntastic'
 " Bundle 'git://git.wincent.com/command-t.git'
 Bundle 'bling/vim-airline'
 Bundle 'mattn/webapi-vim'
@@ -34,6 +34,7 @@ Bundle 'digitaltoad/vim-jade'
 Bundle 'nono/vim-handlebars'
 Bundle 'wavded/vim-stylus'
 Bundle 'plasticboy/vim-markdown'
+Bundle 'elixir-lang/vim-elixir'
 
 " Base 2
 filetype plugin indent on
@@ -124,7 +125,7 @@ au BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab " default indent
 "au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw! " recompiles silentely
 
 " Rainbow Parantheses by default
-au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 "au Syntax * RainbowParenthesesLoadSquare
 "au Syntax * RainbowParenthesesLoadBraces
